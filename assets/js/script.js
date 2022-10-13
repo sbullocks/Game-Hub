@@ -21,7 +21,7 @@
 
 
 function  fetchTest() {
-fetch('https://api.rawg.io/api/platforms?key=5d6305c20a2d4927a017ef5ef6beab60')
+fetch('https://api.rawg.io/api/genres?key=5d6305c20a2d4927a017ef5ef6beab60')
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
