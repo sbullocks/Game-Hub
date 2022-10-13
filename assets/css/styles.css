@@ -1,0 +1,28 @@
+.section {
+background-color: rgb(110, 71, 202);
+border: 1px solid black;
+}
+
+#puzzle-section {
+background-image: url("../images/puzzle1.jpg");
+}
+
+#racing-section {
+background-image: url("../images/racing1.jpg");
+}
+
+#action-section {
+background-image: url("../images/action1.jpg");
+}
+
+#shooter-section {
+background-image: url("../images/shooter1.jpeg");
+}
+
+#adventure-section {
+background-image: url("../images/adventure1.jpg");
+}
+
+#sports-section {
+background-image: url("../images/sports1.webp");
+}
