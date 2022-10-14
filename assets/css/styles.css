@@ -1,28 +1,97 @@
+:root {
+--black: #0e1111;
+--white: #f9f9f9;
+}
+
+* {
+font-family: 'Prompt', serif;
+color: var(--white);
+}
+
+header {
+background-color: var(--black);
+}
+
+#hero {
+background-color: var(--black);
+border-top: 2px dotted var(--white);
+}
+
 .section {
-background-color: rgb(110, 71, 202);
-border: 1px solid black;
-}
-
-#puzzle-section {
-background-image: url("../images/puzzle1.jpg");
-}
-
-#racing-section {
-background-image: url("../images/racing1.jpg");
+background-color: var(--black);
+border-top: 2px dotted var(--white);
 }
 
 #action-section {
-background-image: url("../images/action1.jpg");
-}
-
-#shooter-section {
-background-image: url("../images/shooter1.jpeg");
+background-color: var(--black);
 }
 
 #adventure-section {
-background-image: url("../images/adventure1.jpg");
+background-color: var(--black);
+}
+
+#puzzle-section {
+background-color: var(--black);
+}
+
+#racing-section {
+background-color: var(--black);
+}
+
+
+#shooter-section {
+background-color: var(--black);
 }
 
 #sports-section {
-background-image: url("../images/sports1.webp");
+background-color: var(--black);
+}
+
+h1 {
+font-size: 44px;
+}
+
+h2 {
+font-size: 34px;
+color: var(--white);
+text-decoration: none;
+}
+
+h2:hover {
+transform: scale(1.5);
+transition: transform 0.5s ease-in-out;
+}
+
+a:link {
+font-size: 34px;
+color: var(--white);
+text-decoration: none;
+}
+
+a:visited {
+font-size: 34px;
+color: var(--white);
+text-decoration: none;
+}
+
+a:hover {
+font-size: 34px;
+color: var(--white);
+text-decoration: none;
+}
+
+a:active {
+font-size: 34px;
+color: var(--white);
+text-decoration: none;
+}
+
+img {
+height: 250px;
+border: 2px solid var(--white);
+}
+
+.footer {
+background-color: var(--black);
+border-top: 2px dotted var(--white);
 }

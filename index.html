@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>Document</title>
+    <title>Project 1</title>
 </head>
 
 <body>
@@ -25,7 +28,7 @@
     </header>
 
 
-    <section class="hero is-medium is-info">
+    <section class="hero is-medium is-info is-justify-content-center is-align-items-center" id="hero">
         <div class="hero-body">
             <p class="title">
                 Large hero
@@ -37,83 +40,134 @@
     </section>
 
     <section class="section is-medium">
-       <div class="field has-addons">
-      <div class="control">
-        <input id="game-search" class="input" type="text" placeholder="Search for a game:">
-      </div>
-      <div class="control">
-        <button class="button is-info">
-          Search
-        </button>
-      </div>
-    </div>
+        <div class="field has-addons is-justify-content-center is-align-items-center">
+            <div class="dropdown is-active">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                        <span>Click me</span>
+                        <span class="icon is-small">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item">
+                            Overview
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Modifiers
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Grid
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Form
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Elements
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Components
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Layout
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <input id="game-search" class="input" type="text" placeholder="Search for a game:">
+            </div>
+            <div class="control">
+                <button class="button is-info" type="submit" id="searchBtn">
+                    Search
+                </button>
+            </div>
+        </div>
 
     </section>
 
 
-    <section class="section is-large" id="action-section">
-        <h2>Action</h2>
-        <ol id="top-five-action-list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+    <section class="section is-medium is-flex is-justify-content-space-between is-align-items-center"
+        id="action-section">
+        <h2 class="column is-one-fifth"><a href="#">Action</a></h2>
+        <img class="column is-one-third" src="./assets/images/action1.jpg" alt="Action Game Image">
+        <ol class="column is-one-quarter" id="top-five-action-list">
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
         </ol>
     </section>
 
-    <section class="section is-large" id="adventure-section">
-        <h2>Adventure</h2>
-        <ol id="top-five-adventure-list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+    <section class="section is-medium is-flex is-justify-content-space-between is-align-items-center"
+        id="adventure-section">
+        <h2 class="column is-one-fifth"><a href="#">Adventure</a></h2>
+        <img class="column is-one-third" src="./assets/images/adventure1.jpg" alt="Adventure Game Image">
+        <ol class="column is-one-quarter" id="top-five-adventure-list">
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
         </ol>
     </section>
 
-    <section class="section is-large" id="puzzle-section">
-        <h2>Puzzle</h2>
-        <ol id="top-five-puzzle-list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+    <section class="section is-medium is-flex is-justify-content-space-between is-align-items-center"
+        id="puzzle-section">
+        <h2 class="column is-one-fifth"><a href="#">Puzzle</a></h2>
+        <img class="column is-one-third" src="./assets/images/puzzle1.jpg" alt="Puzzle Game Image">
+        <ol class="column is-one-quarter" id="top-five-puzzle-list">
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
         </ol>
     </section>
 
-    <section class="section is-large" id="racing-section">
-        <h2>Racing</h2>
-        <ol id="top-five-racing-list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+    <section class="section is-medium is-flex is-justify-content-space-between is-align-items-center"
+        id="racing-section">
+        <h2 class="column is-one-fifth"><a href="#">Racing</a></h2>
+        <img class="column is-one-third" src="./assets/images/racing1.jpg" alt="Racing Game Image">
+        <ol class="column is-one-quarter" id="top-five-racing-list">
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
         </ol>
     </section>
 
-    <section class="section is-large" id="shooter-section">
-        <h2>Shooter</h2>
-        <ol id="top-five-shooter-list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+    <section class="section is-medium is-flex is-justify-content-space-between is-align-items-center"
+        id="shooter-section">
+        <h2 class="column is-one-fifth"><a href="#">Shooter</a></h2>
+        <img class="column is-one-third" src="./assets/images/shooter1.jpeg" alt="Shooter Game Image">
+        <ol class="column is-one-quarter" id="top-five-shooter-list">
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
         </ol>
     </section>
 
-    <section class="section is-large" id="sports-section">
-        <h2>Sports</h2>
-        <ol id="top-five-sports-list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+    <section class="section is-medium is-flex is-justify-content-space-between is-align-items-center"
+        id="sports-section">
+        <h2 class="column is-one-fifth"><a href="#">Sports</a></h2>
+        <img class="column is-one-third" src="./assets/images/sports1.webp" alt="Sports Game Image">
+        <ol class="column is-one-quarter" id="top-five-sports-list">
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
         </ol>
     </section>
 
