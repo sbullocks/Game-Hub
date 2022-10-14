@@ -30,6 +30,10 @@ background-color: var(--black);
 background-color: var(--black);
 }
 
+.dropdown {
+margin: 25px;
+}
+
 #puzzle-section {
 background-color: var(--black);
 }
@@ -37,7 +41,6 @@ background-color: var(--black);
 #racing-section {
 background-color: var(--black);
 }
-
 
 #shooter-section {
 background-color: var(--black);
@@ -78,6 +81,16 @@ a:hover {
 font-size: 34px;
 color: var(--white);
 text-decoration: none;
+}
+
+/* color for dropdown click on main page. */
+/* .click-color {
+    color: blue;
+} */
+
+/* color for dropdown menu on main page. */
+.dropdown-content a {
+    color: blue;
 }
 
 a:active {
