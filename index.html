@@ -1,204 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>Document</title>
+    <title>Project 1</title>
 </head>
 
 <body>
-  
-<header class="columns is-justify-content-space-between" >
-  <h1>Project Name TBD </h1>
-  <ul class="is-flex-direction-row" style= "display: flex";>
-    <li>Action</li>
-    <li>Adventure</li>
-    <li>Role-</li>
-    <li>Shooter</li>
-    <li>Survival</li>
-  </ul>
 
-</header>
+    <header class="columns is-justify-content-space-between m-0 p-1">
+        <h1 class="p-3">Project Name TBD </h1>
+        <ul class="is-flex-direction-row" style="display: flex" ;>
+            <li class="p-3">Action</li>
+            <li class="p-3">Adventure</li>
+            <li class="p-3">Role-</li>
+            <li class="p-3">Shooter</li>
+            <li class="p-3">Survival</li>
+        </ul>
+
+    </header>
 
 
-    <section class="hero is-medium is-info">
-     <div class="hero-body">
-      <p class="title">
-        Large hero
-      </p>
-       <p class="subtitle">
-        Large subtitle
-       </p>
-      </div>
+    <section class="hero is-medium is-info is-justify-content-center is-align-items-center" id="hero">
+        <div class="hero-body">
+            <p class="title">
+                Large hero
+            </p>
+            <p class="subtitle">
+                Large subtitle
+            </p>
+        </div>
     </section>
 
-    <div class="field has-addons">
-      <div class="control">
-        <input id="game-search" class="input" type="text" placeholder="Search for a game:">
-      </div>
-      <div class="control">
-        <button class="button is-info">
-          Search
-        </button>
-      </div>
-    </div>
+    <section class="section is-medium">
+        <div class="field has-addons is-justify-content-center is-align-items-center">
+            <div class="dropdown is-active">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                        <span>Click me</span>
+                        <span class="icon is-small">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item">
+                            Overview
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Modifiers
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Grid
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Form
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Elements
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Components
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Layout
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <input id="game-search" class="input" type="text" placeholder="Search for a game:">
+            </div>
+            <div class="control">
+                <button class="button is-info" type="submit" id="searchBtn">
+                    Search
+                </button>
+            </div>
+        </div>
 
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">
-          Action
-        </p>
-        <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header>
-    </div>
+    </section>
 
-    <div class="card">
-      <div class="card-content">
-        <p class="title">
-          Black Ops 4 features gritty, grounded, fluid Multiplayer combat, the biggest Zombies offering ever with four full undead adventures, and Blackout, where the universe of Black Ops comes to life in two massive battle royale experiences.
-        </p>
-        <p class="subtitle">
-          Developer(s): Treyarch
-        </p>
-      </div>
-      <footer class="card-footer">
-        <p class="card-footer-item">
-          <!-- <span>
-            View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
-          </span> -->
-        </p>
-        <p class="card-footer-item">
-          <span>
-            <!-- Share on <a href="#">Facebook</a> -->
-            Gameplay mode(s): Campaign, Single-Player and Multiplayer video game.
-          </span>
-        </p>
-      </footer>
-    </div>
 
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">
-          Adventure
-        </p>
-        <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header>
-    </div>
+    <section class="section is-medium is-flex is-justify-content-space-between is-align-items-center"
+        id="action-section">
+        <h2 class="column is-one-fifth"><a href="#">Action</a></h2>
+        <img class="column is-one-third" src="./assets/images/action1.jpg" alt="Action Game Image">
+        <ol class="column is-one-quarter" id="top-five-action-list">
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+        </ol>
+    </section>
 
-    <div class="card">
-      <div class="card-content">
-        <p class="title">
-          Sonic Adventure is a 3D platform game with action and role-playing elements. Players control one of six anthropomorphic protagonists as they venture to defeat Doctor Robotnik and his robot army, who seek the seven magical Chaos Emeralds and the evil entity Chaos.
-        </p>
-        <p class="subtitle">
-          Developer(s): Sonic Team
-        </p>
-      </div>
-      <footer class="card-footer">
-        <p class="card-footer-item">
-          <!-- <span>
-            View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
-          </span> -->
-        </p>
-        <p class="card-footer-item">
-          <span>
-            <!-- Share on <a href="#">Facebook</a> -->
-            Gameplay mode(s): Single-Player video game
-          </span>
-        </p>
-      </footer>
-    </div>
-    
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">
-          Role Play Games
-        </p>
-        <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header>
-    </div>
+    <section class="section is-medium is-flex is-justify-content-space-between is-align-items-center"
+        id="adventure-section">
+        <h2 class="column is-one-fifth"><a href="#">Adventure</a></h2>
+        <img class="column is-one-third" src="./assets/images/adventure1.jpg" alt="Adventure Game Image">
+        <ol class="column is-one-quarter" id="top-five-adventure-list">
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+        </ol>
+    </section>
 
-    <div class="card">
-      <div class="card-content">
-        <p class="title">
-          The focus of the game is on the simulated lives of virtual people called "Sims", and the player is responsible for directing their actions, attending to their needs, and helping them attain their desires. Players control their life and explore different personalities which change the way the game plays out.
-        </p>
-        <p class="subtitle">
-          Developer(s): Maxis
-        </p>
-      </div>
-      <footer class="card-footer">
-        <p class="card-footer-item">
-          <!-- <span>
-            View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
-          </span> -->
-        </p>
-        <p class="card-footer-item">
-          <span>
-            <!-- Share on <a href="#">Facebook</a> -->
-            Gameplay modes: Single-Player video game
-          </span>
-        </p>
-      </footer>
-    </div>
+    <section class="section is-medium is-flex is-justify-content-space-between is-align-items-center"
+        id="puzzle-section">
+        <h2 class="column is-one-fifth"><a href="#">Puzzle</a></h2>
+        <img class="column is-one-third" src="./assets/images/puzzle1.jpg" alt="Puzzle Game Image">
+        <ol class="column is-one-quarter" id="top-five-puzzle-list">
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+        </ol>
+    </section>
 
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">
-          Survival
-        </p>
-        <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header>
-    </div>
-    
-    <div class="card">
-      <div class="card-content">
-        <p class="title">
-          In Minecraft, players explore a blocky, procedurally generated 3D world with virtually infinite terrain and may discover and extract raw materials, craft tools and items, and build structures, earthworks, and simple machines.
-        </p>
-        <p class="subtitle">
-          Developer(s): Mojang Studios, Other Ocean Interactive, 4J Studios, Xbox Game Studios
-        </p>
-      </div>
-      <footer class="card-footer">
-        <p class="card-footer-item">
-          <!-- <span>
-            View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
-          </span> -->
-        </p>
-        <p class="card-footer-item">
-          <span>
-            <!-- Share on <a href="#">Facebook</a> -->
-            Gameplay mode(s): Single-Player and Multiplayer video game
-          </span>
-        </p>
-      </footer>
-    </div>
-    
+    <section class="section is-medium is-flex is-justify-content-space-between is-align-items-center"
+        id="racing-section">
+        <h2 class="column is-one-fifth"><a href="#">Racing</a></h2>
+        <img class="column is-one-third" src="./assets/images/racing1.jpg" alt="Racing Game Image">
+        <ol class="column is-one-quarter" id="top-five-racing-list">
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+        </ol>
+    </section>
 
+    <section class="section is-medium is-flex is-justify-content-space-between is-align-items-center"
+        id="shooter-section">
+        <h2 class="column is-one-fifth"><a href="#">Shooter</a></h2>
+        <img class="column is-one-third" src="./assets/images/shooter1.jpeg" alt="Shooter Game Image">
+        <ol class="column is-one-quarter" id="top-five-shooter-list">
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+        </ol>
+    </section>
+
+    <section class="section is-medium is-flex is-justify-content-space-between is-align-items-center"
+        id="sports-section">
+        <h2 class="column is-one-fifth"><a href="#">Sports</a></h2>
+        <img class="column is-one-third" src="./assets/images/sports1.webp" alt="Sports Game Image">
+        <ol class="column is-one-quarter" id="top-five-sports-list">
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+        </ol>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Project Name</strong> by Dylan, Stephen, Antione, Jordan.
+            </p>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="./assets/js/script.js"></script>   
+    <script src="./assets/js/script.js"></script>
 
 </body>
- </html>
+
+</html>
