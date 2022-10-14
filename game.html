@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Project 1</title>
+</head>
+
+<body>
+    <header class="columns is-justify-content-space-between m-0 p-1">
+        <h1 class="p-3">Project Name TBD </h1>
+        <ul class="is-flex-direction-row" style="display: flex" ;>
+            <li class="p-3">Action</li>
+            <li class="p-3">Adventure</li>
+            <li class="p-3">Role-</li>
+            <li class="p-3">Shooter</li>
+            <li class="p-3">Survival</li>
+        </ul>
+
+    </header>
+    <main class="container">
+ 
+        <!-- Left Column / Headphones Image -->
+        <div class="left-column">
+          <img id="game-image" src="./assets/images/COD.jpeg" alt="">
+        </div>
+       
+       
+        <!-- Right Column -->
+        <div class="right-column">
+       
+          <!-- Product Description -->
+          <div class="product-description">
+            <span>Headphones</span>
+            <h1>Beats EP</h1>
+            <p>The preferred choice of a vast range of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance</p>
+          </div>
+       
+          <!-- Product Configuration -->
+          <div class="product-configuration">
+       
+            <!-- Product Color -->
+            <div class="product-color">
+              <span>Color</span>
+       
+              <div class="color-choose">
+                <div>
+                  <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                  <label for="red"><span></span></label>
+                </div>
+                <div>
+                  <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                  <label for="blue"><span></span></label>
+                </div>
+                <div>
+                  <input data-image="black" type="radio" id="black" name="color" value="black">
+                  <label for="black"><span></span></label>
+                </div>
+              </div>
+       
+            </div>
+       
+            <!-- Cable Configuration -->
+            <div class="cable-config">
+              <span>Cable configuration</span>
+       
+              <div class="cable-choose">
+                <button>Straight</button>
+                <button>Coiled</button>
+                <button>Long-coiled</button>
+              </div>
+       
+              <a href="#">How to configurate your headphones</a>
+            </div>
+          </div>
+       
+          <!-- Product Pricing -->
+          <div class="product-price">
+            <span>148$</span>
+            <a href="#" class="cart-btn">Add to cart</a>
+          </div>
+        </div>
+      </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/game.js"></script>
+</body>
+</html>
