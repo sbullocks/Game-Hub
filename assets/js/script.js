@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+var genres = ['Action', 'Indie', 'Adventure', 'RPG', 'Strategy', 'Shooter', 'Casual', 'Simulation', 'Puzzle', 'Arcade', 'Platformer', 'Racing', 'Massively Multiplayer', 'Sports', 'Fighting', 'Family', 'Board Games', 'Educational', 'Card']
+
 
 
 //variables for getting elements
@@ -9,39 +11,22 @@ $(document).ready(function () {
 function searchGame(e) {
 e.preventDefault();
 console.log('hi')
-//get input value
-//fetch api to browse games by catagory
-//change location
-    window.location.href = "./stats.html/"
-//append info/video to page
+if(!$('#game-search').val()) {
+alert('Please enter a game')
+return;
+}
+const game = $('#game-search').val().replaceAll(' ', '-').trim();
+localStorage.setItem("game", game);
+window.location.href = "game.html"
 }
 
 
+function searchGenre() {
+var genre = $(this).text();
+localStorage.setItem("genre", genre)
+window.location.href = "genre.html"
+}
 
-
-
-
-// function  fetchTest() {
-// fetch('https://api.rawg.io/api/genres?key=5d6305c20a2d4927a017ef5ef6beab60')
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
-
-
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'fc02a3c87bmshe9e61389afea8d6p11e23ejsn3996352c92c2',
-// 		'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
-// 	}
-// };
-
-// fetch('https://youtube138.p.rapidapi.com/video/streaming-data/?id=VyHV0BRtdxo', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
-// }
-// fetchTest();
 
 
 
@@ -53,6 +38,7 @@ console.log('hi')
 
 //event listeners
 $('#searchBtn').on('click', searchGame);
+$('.genre-click').on('click', searchGenre);
 
 
 
