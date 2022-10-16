@@ -16,8 +16,13 @@ fetch('https://api.rawg.io/api/games/' + game + '?key=5d6305c20a2d4927a017ef5ef6
             alert("sorry that game wasnt found")
         }
         console.log('data', data)
-        $('#header').text(data.name);
+        $('#game-title').text(data.name);
         $('#game-image').attr('src', data.background_image);
+        $('#released').text(data.released);
+        $('#description').text(data.description_raw);
+        for (let i = 0; i < data.platforms.length; i++) {
+            $('#platforms').append('<li class="platforms-list-item">' + data.platforms[i].platform.name + '</li>')
+        }
     })
 
 

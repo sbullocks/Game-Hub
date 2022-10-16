@@ -22,11 +22,35 @@ background-color: var(--black);
 border-top: 2px dotted var(--white);
 }
 
-#action-section {
+#search-container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#searchBtn {
+background-color: var(--black);
+border-color: var(--white);
+}
+
+#searchBtn:hover {
+background-color: var(--white);
+border-color: var(--black);
+color: var(--black)
+}
+
+
+#form-wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#pc-section {
 background-color: var(--black);
 }
 
-#adventure-section {
+#playstation-section {
 background-color: var(--black);
 }
 
@@ -34,19 +58,15 @@ background-color: var(--black);
 margin: 25px;
 }
 
-#puzzle-section {
+#xbox-section {
 background-color: var(--black);
 }
 
-#racing-section {
+#iphone-section {
 background-color: var(--black);
 }
 
-#shooter-section {
-background-color: var(--black);
-}
-
-#sports-section {
+#android-section {
 background-color: var(--black);
 }
 
@@ -60,24 +80,44 @@ color: var(--white);
 text-decoration: none;
 }
 
+h2 a:active {
+font-size: 34px;
+color: var(--white);
+text-decoration: none;
+}
+
+h2 a:visited {
+font-size: 34px;
+color: var(--white);
+text-decoration: none;
+}
+
+h2 a:link {
+font-size: 34px;
+color: var(--white);
+text-decoration: none;
+}
+
+
+
 h2:hover {
 transform: scale(1.5);
 transition: transform 0.5s ease-in-out;
 }
 
-a:link {
+header a:link {
 font-size: 34px;
 color: var(--white);
 text-decoration: none;
 }
 
-a:visited {
+header a:visited {
 font-size: 34px;
 color: var(--white);
 text-decoration: none;
 }
 
-a:hover {
+header a:hover {
 font-size: 34px;
 color: var(--white);
 text-decoration: none;
@@ -104,22 +144,29 @@ header li:hover::after {
 transform: scaleX(1);
 }
 
-
-
-/* color for dropdown click on main page. */
-/* .click-color {
-    color: blue;
-} */
-
-/* color for dropdown menu on main page. */
-.dropdown-content a {
-    color: blue;
+.click-color {
+color: var(--black)
 }
 
-a:active {
+.fa-solid {
+color: var(--black);
+}
+
+header a:active {
 font-size: 34px;
 color: var(--white);
 text-decoration: none;
+}
+
+.dropdown-anchor {
+color: var(--black);
+display: block;
+font-size: 16px;
+}
+
+.dropdown-anchor:hover {
+font-size: 28px;
+color: var(--black)
 }
 
 img {
