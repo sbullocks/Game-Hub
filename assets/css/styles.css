@@ -67,6 +67,11 @@ header li:hover::after {
 .splide__slide img {
     height: 250px;
     width: 180px;
+    box-shadow: 10px 10px 3px black;
+}
+
+.splide__track {
+overflow: visible;
 }
 
 .carousel-games:hover {
