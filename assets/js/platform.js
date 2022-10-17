@@ -10,6 +10,7 @@ $(document).ready(function () {
 		.then(data => {
 			$('#platform-image').attr('src', data.image_background);
 			$('#platform-title').text(platformName);
+			$('#platform-stats-container').append('<img style="margin-left: 2%; margin-top: 1%;" height="20px" width="70px" src="./assets/images/icons/' + platform + '.png">')
 			$('#total-games').text(data.games_count);
 		})
 
@@ -28,7 +29,10 @@ $(document).ready(function () {
 		.then(response => response.json())
 		.then(data => {
 			console.log(data)
-			const video = 'https://www.youtube.com/embed/' + data.contents[0].video.videoId;
+			let video = 'https://www.youtube.com/embed/' + data.contents[0].video.videoId;
+			if (data.contents[0].video.videoId == 'undefined') {
+			video = 'https://www.youtube.com/embed/' + data.contents[1].video.videoId;
+			}
 			$('.video-container').append('<iframe class="video-frame" src="' + video + '"></iframe>')
 		})
 		.catch(err => console.error(err));

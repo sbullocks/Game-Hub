@@ -44,7 +44,6 @@ $(document).ready(function () {
     fetch('https://youtube138.p.rapidapi.com/search/?q=' + game + 'game trailer' + '&hl=en&gl=US', options)
         .then(response => response.json())
         .then(data => {
-            console.log(data)
             const video = 'https://www.youtube.com/embed/' + data.contents[0].video.videoId;
             $('.video-container').append('<iframe class="video-frame" src="' + video + '"></iframe>')
         })
