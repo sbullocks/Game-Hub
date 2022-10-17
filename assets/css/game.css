@@ -20,6 +20,10 @@ height: 100vh;
 height: 80%;
 }
 
+strong {
+color: var(--white)
+}
+
 .footer {
 background-color: var(--black);
 border-top: 2px dotted var(--white);

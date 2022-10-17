@@ -205,6 +205,10 @@ object-position: center;
 color: var(--white)
 }
 
+strong {
+color: var(--white)
+}
+
 
 @media screen and (max-width: 769px) {
     .section {
