@@ -13,11 +13,19 @@ fetch('https://api.rawg.io/api/games/' + game + '?key=5d6305c20a2d4927a017ef5ef6
             localStorage.setItem("game", newName);
             location.reload();
         } else if (data.detail == 'Not found.') {
-            alert("sorry that game wasnt found")
+            $('#game-image-container').remove();
+            $('#game-stats-container').remove();
+            $('#main-container').removeClass('columns').addClass('is-flex is-flex-direction-column is-align-items-center').append('<h2 class="sorry-header">Sorry! That game was not found.</h2>');
+            $('#main-container').append('<button id="go-back">Go Back</button>')
         }
         console.log('data', data)
-        $('#header').text(data.name);
+        $('#game-title').text(data.name);
         $('#game-image').attr('src', data.background_image);
+        $('#released').text(data.released);
+        $('#description').text(data.description_raw);
+        for (let i = 0; i < data.platforms.length; i++) {
+            $('#platforms').append('<li class="platforms-list-item">' + data.platforms[i].platform.name + '</li>')
+        }
     })
 
 
@@ -33,7 +41,9 @@ fetch('https://api.rawg.io/api/games/' + game + '?key=5d6305c20a2d4927a017ef5ef6
 
 
 
-
+$(document).on('click', '#go-back', function () {
+window.location.href = "index.html"
+})
 
 
 
