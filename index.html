@@ -17,49 +17,66 @@
 <body>
 
     <header class="columns is-justify-content-space-between m-0 p-1">
-        <h1><u>Game Hub </u></h1>
-        <ul class="is-flex-direction-row is-align-items-center" style="display: flex; flex-wrap: wrap">
-            <li class="mr-5"><a href="#pc-section">PC</a></li>
-            <li class="mr-5"><a href="#playstation-section">PlayStation 5</a></li>
-            <li class="mr-5"><a href="#xbox-section">XBOX One</a></li>
-            <li class="mr-5"><a href="#iphone-section">IOS</a></li>
-            <li class="mr-5"><a href="#android-section">Android</a></li>
+        <h1 id="project-title-header"><u>Game Hub </u></h1>
+        <ul id="top-nav-list" class="is-flex-direction-row is-align-items-center"
+            style="display: flex; flex-wrap: wrap">
+            <li class="mr-5"><a class="nav-links" href="#pc-section">PC</a></li>
+            <li class="mr-5"><a class="nav-links" href="#playstation-section">PlayStation 5</a></li>
+            <li class="mr-5"><a class="nav-links" href="#xbox-section">XBOX One</a></li>
+            <li class="mr-5"><a class="nav-links" href="#iphone-section">IOS</a></li>
+            <li class="mr-5"><a class="nav-links" href="#android-section">Android</a></li>
         </ul>
 
     </header>
 
-
-    <section class="section is-medium is-flex is-justify-content-center is-align-items-center splide" aria-label="Games" id="image-carousel">
-    <div class="splide__slider">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide is-flex is-justify-content-center is-align-items-center" data-splide-interval="3000">
-                    <img class="carousel-games" id="apex-legends" src="./assets/images/carousel/apex.jpg" alt="Apex Legends Cover Image">
-                </li>
-                <li class="splide__slide is-flex is-justify-content-center is-align-items-center" data-splide-interval="3000">
-                    <img class="carousel-games" id="nba-2k23" src="./assets/images/carousel/2k23.jpg" alt="NBA 2k23 Cover Image">
-                </li>
-                <li class="splide__slide is-flex is-justify-content-center is-align-items-center" data-splide-interval="3000">
-                    <img class="carousel-games" id="elden-ring" src="./assets/images/carousel/eldenRing.jpg" alt="Elden Ring Cover Image">
-                </li>
-                <li class="splide__slide is-flex is-justify-content-center is-align-items-center" data-splide-interval="3000">
-                    <img class="carousel-games" id="gta5" src="./assets/images/carousel/gta5.jpg" alt="GTA Five Cover Image">
-                </li>
-                <li class="splide__slide is-flex is-justify-content-center is-align-items-center" data-splide-interval="3000">
-                    <img class="carousel-games" id="Mario-Kart-Double-Dash" src="./assets/images/carousel/MarioKart.jpg" alt="Mario Kart Cover Image">
-                </li>
-                <li class="splide__slide is-flex is-justify-content-center is-align-items-center" data-splide-interval="3000">
-                    <img class="carousel-games" id="Madden-NFL-23" src="./assets/images/carousel/madden23.jpeg" alt="Madden NFL 23 Cover Image">
-                </li>
-                <li class="splide__slide is-flex is-justify-content-center is-align-items-center" data-splide-interval="3000">
-                    <img class="carousel-games" id="Minecraft" src="./assets/images/carousel/minecraft.jpg" alt="Minecraft Cover Image">
-                </li>
-                <li class="splide__slide is-flex is-justify-content-center is-align-items-center" data-splide-interval="3000">
-                    <img class="carousel-games" id="Destiny-2" src="./assets/images/carousel/destiny2.jpg" alt="Destiny 2 Cover Image">
-                </li>
-            </ul>
+    <section class="section is-medium is-flex is-justify-content-center is-align-items-center splide" aria-label="Games"
+        id="image-carousel">
+        <div class="splide__slider">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide is-flex is-justify-content-center is-align-items-center"
+                        data-splide-interval="3000">
+                        <img class="carousel-games" id="apex-legends" src="./assets/images/carousel/apex.jpg"
+                            alt="Apex Legends Cover Image">
+                    </li>
+                    <li class="splide__slide is-flex is-justify-content-center is-align-items-center"
+                        data-splide-interval="3000">
+                        <img class="carousel-games" id="nba-2k23" src="./assets/images/carousel/2k23.jpg"
+                            alt="NBA 2k23 Cover Image">
+                    </li>
+                    <li class="splide__slide is-flex is-justify-content-center is-align-items-center"
+                        data-splide-interval="3000">
+                        <img class="carousel-games" id="elden-ring" src="./assets/images/carousel/eldenRing.jpg"
+                            alt="Elden Ring Cover Image">
+                    </li>
+                    <li class="splide__slide is-flex is-justify-content-center is-align-items-center"
+                        data-splide-interval="3000">
+                        <img class="carousel-games" id="gta5" src="./assets/images/carousel/gta5.jpg"
+                            alt="GTA Five Cover Image">
+                    </li>
+                    <li class="splide__slide is-flex is-justify-content-center is-align-items-center"
+                        data-splide-interval="3000">
+                        <img class="carousel-games" id="Mario-Kart-Double-Dash"
+                            src="./assets/images/carousel/MarioKart.jpg" alt="Mario Kart Cover Image">
+                    </li>
+                    <li class="splide__slide is-flex is-justify-content-center is-align-items-center"
+                        data-splide-interval="3000">
+                        <img class="carousel-games" id="Madden-NFL-23" src="./assets/images/carousel/madden23.jpeg"
+                            alt="Madden NFL 23 Cover Image">
+                    </li>
+                    <li class="splide__slide is-flex is-justify-content-center is-align-items-center"
+                        data-splide-interval="3000">
+                        <img class="carousel-games" id="Minecraft" src="./assets/images/carousel/minecraft.jpg"
+                            alt="Minecraft Cover Image">
+                    </li>
+                    <li class="splide__slide is-flex is-justify-content-center is-align-items-center"
+                        data-splide-interval="3000">
+                        <img class="carousel-games" id="Destiny-2" src="./assets/images/carousel/destiny2.jpg"
+                            alt="Destiny 2 Cover Image">
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
     </section>
 
     <section class="section is-medium" id="search-container">
@@ -101,7 +118,7 @@
         <h2 class="column is-one-fifth"><a id="4" class="platform-click" href="#">PC</a></h2>
         <img class="column is-one-third main-images" src="./assets/images/PC.jpg" alt="Image of PC">
         <ol class="column is-one-quarter" id="pc-list">
-        <h3 style="font-size: 44px; padding-bottom: 10px;"><u>Top Games</u></h3>
+            <h3 style="font-size: 44px; padding-bottom: 10px;"><u>Top Games</u></h3>
         </ol>
     </section>
 
@@ -109,8 +126,8 @@
         id="playstation-section">
         <h2 class="column is-one-fifth"><a id="187" class="platform-click" href="#">PlayStation 5</a></h2>
         <img class="column is-one-third main-images" src="./assets/images/PS5.jpg" alt="Image of PlayStation 5">
-        <ol class="column is-one-quarter" id="ps5-list"> 
-        <h3 style="font-size: 44px; padding-bottom: 10px;"><u>Top Games</u></h3>
+        <ol class="column is-one-quarter" id="ps5-list">
+            <h3 style="font-size: 44px; padding-bottom: 10px;"><u>Top Games</u></h3>
         </ol>
     </section>
 
@@ -118,7 +135,7 @@
         <h2 class="column is-one-fifth"><a id="1" class="platform-click" href="#">XBOX One</a></h2>
         <img class="column is-one-third main-images" src="./assets/images/XBOX.jpg" alt="Image of XBOX">
         <ol class="column is-one-quarter" id="xbox-list">
-        <h3 style="font-size: 44px; padding-bottom: 10px;"><u>Top Games</u></h3>
+            <h3 style="font-size: 44px; padding-bottom: 10px;"><u>Top Games</u></h3>
         </ol>
     </section>
 
@@ -127,7 +144,7 @@
         <h2 class="column is-one-fifth"><a id="3" class="platform-click" href="#">IOS</a></h2>
         <img class="column is-one-third main-images" src="./assets/images/iphone.webp" alt="iPhone Image">
         <ol class="column is-one-quarter" id="ios-list">
-        <h3 style="font-size: 44px; padding-bottom: 10px;"><u>Top Games</u></h3>
+            <h3 style="font-size: 44px; padding-bottom: 10px;"><u>Top Games</u></h3>
         </ol>
     </section>
 
@@ -136,7 +153,7 @@
         <h2 class="column is-one-fifth"><a id="21" class="platform-click" href="#">Android</a></h2>
         <img class="column is-one-third main-images" src="./assets/images/android.webp" alt="Galaxy Image">
         <ol class="column is-one-quarter" id="android-list">
-        <h3 style="font-size: 44px; padding-bottom: 10px;"><u>Top Games</u></h3>
+            <h3 style="font-size: 44px; padding-bottom: 10px;"><u>Top Games</u></h3>
         </ol>
     </section>
 

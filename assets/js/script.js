@@ -100,6 +100,11 @@ new Splide( '.splide', {
   type    : 'loop',
   autoplay: 'play',
   perPage : 3,
+  breakpoints: {
+        518: {
+            perPage : 1,
+        }
+    }
 }).mount()
 
 
