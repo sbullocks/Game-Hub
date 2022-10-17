@@ -43,10 +43,12 @@ font-weight: bold;
 text-decoration: underline;
 }
 
+
 #main-container {
 background-color: var(--black);
 border: 2px dotted var(--white);
 flex-direction: column;
+margin: 0;
 }
 
 #platform-image-container {
