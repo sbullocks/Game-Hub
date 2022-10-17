@@ -213,6 +213,11 @@ object-fit: cover;
 object-position: center;
 }
 
+.clickable-game {
+color: var(--white)
+}
+
+
 @media screen and (max-width: 769px) {
     .section {
     flex-direction: column;
