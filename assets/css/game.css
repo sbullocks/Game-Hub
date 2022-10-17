@@ -12,9 +12,29 @@ header {
 background-color: var(--black);
 }
 
+body {
+height: 100vh;
+}
+
+.set-height {
+height: 80%;
+}
+
 .footer {
 background-color: var(--black);
 border-top: 2px dotted var(--white);
+}
+
+.video-container {
+background-color: var(--black);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.video-frame {
+width: 500px;
+height: 500px;
 }
 
 #released-span {
@@ -46,6 +66,8 @@ text-decoration: underline;
 #main-container {
 background-color: var(--black);
 border: 2px dotted var(--white);
+margin: 0;
+height: 100%;
 }
 
 #game-image-container {
