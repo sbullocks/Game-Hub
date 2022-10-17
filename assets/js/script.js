@@ -70,7 +70,7 @@ window.location.href = "game.html"
 }
 
 function anotherSearchedClickedGame () {
-const game = $(this).text().replaceAll(' ', '-').replaceAll(':', '').toLowerCase().trim();
+const game = $(this).text().replaceAll(' ', '-').replaceAll(':', '').replaceAll('(', '').replaceAll(')', '').toLowerCase().trim();
 localStorage.setItem("game", game);
 window.location.href = "game.html"
 }

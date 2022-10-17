@@ -65,6 +65,10 @@ width: 500px;
 height: 500px;
 }
 
+strong {
+color: var(--white)
+}
+
 #platform-image-container {
 display: flex;
 justify-content: center;
