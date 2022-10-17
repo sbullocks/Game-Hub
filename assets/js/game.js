@@ -39,7 +39,7 @@ fetch('https://api.rawg.io/api/games/' + game + '?key=5d6305c20a2d4927a017ef5ef6
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'fc02a3c87bmshe9e61389afea8d6p11e23ejsn3996352c92c2',
+		'X-RapidAPI-Key': 'c0c3663d07msh3f3a9199795b993p11b56fjsnfed46f4daa0f',
 		'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
 	}
 };
