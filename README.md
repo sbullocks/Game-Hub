@@ -74,7 +74,7 @@ This project is not licensed at this time.
 <!-- ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) -->
 
 ## Link
-Click [here](https://sbullocks.github.io/password-generator-homework3/) to access the live website.
+Click [here](https://sbullocks.github.io/Game-Hub/) to access the live website.
 
 ## Contributing
 
