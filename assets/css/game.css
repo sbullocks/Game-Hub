@@ -140,3 +140,17 @@ transition: transform 0.6s ease-in-out;
 header li:hover::after {
 transform: scaleX(1);
 }
+
+.sorry-header {
+text-align: center;
+padding: 100px;
+font-size: 55px;
+}
+
+#go-back {
+color: var(--black);
+width: 150px;
+height: 50px;
+margin-bottom: 5%;
+font-size: 24px;
+}
