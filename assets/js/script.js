@@ -9,7 +9,7 @@ $(document).ready(function () {
 function init () {
 fetch('https://api.rawg.io/api/platforms?key=5d6305c20a2d4927a017ef5ef6beab60')
     .then(response => response.json())
-    .then(data => {
+    .then(data => { console.log(data)
         for (let i = 0; i < data.results.length; i++) {
             $('.dropdown-item').append('<a class="dropdown-anchor" id="' + data.results[i].id + '">' + data.results[i].name + '</a>');
         if (data.results[i].name == 'PC') {
@@ -76,7 +76,13 @@ window.location.href = "game.html"
 }
 
 
-
+function anotherPlatformClicked () {
+const platform = $(this).text()
+const platformId = $(this).attr('id');
+localStorage.setItem("platform-name", platform);
+localStorage.setItem("platform", platformId);
+window.location.href = "platform.html";
+}
 
 
 
@@ -89,6 +95,7 @@ $('#searchBtn').on('click', searchGame);
 $(document).on('click', '.dropdown-anchor', searchPlatform);
 $('.carousel-games').on('click', searchClickedGame)
 $(document).on('click', '.clickable-game', anotherSearchedClickedGame)
+$('.platform-click').click(anotherPlatformClicked);
 new Splide( '.splide', {
   type    : 'loop',
   autoplay: 'play',

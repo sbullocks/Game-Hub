@@ -78,31 +78,19 @@ h2 {
 font-size: 34px;
 color: var(--white);
 text-decoration: none;
+font-weight: 700;
 }
 
-h2 a:active {
-font-size: 34px;
+a {
 color: var(--white);
-text-decoration: none;
 }
 
-h2 a:visited {
-font-size: 34px;
-color: var(--white);
-text-decoration: none;
-}
-
-h2 a:link {
-font-size: 34px;
-color: var(--white);
-text-decoration: none;
-}
-
-
-
-h2:hover {
-transform: scale(1.5);
-transition: transform 0.5s ease-in-out;
+h2 a:hover {
+font-size: 55px;
+color: (var(--white));
+border: 1px solid var(--white);
+padding: 2px;
+border-radius: 5px;
 }
 
 header a:link {
