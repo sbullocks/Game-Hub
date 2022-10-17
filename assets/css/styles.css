@@ -187,3 +187,34 @@ cursor: pointer;
 background-color: var(--black);
 border-top: 2px dotted var(--white);
 }
+
+.pc-list-item {
+padding: 8px;
+}
+
+.playstation-list-item {
+padding: 8px;
+}
+
+.xbox-list-item {
+padding: 8px;
+}
+
+.ios-list-item {
+padding: 8px;
+}
+
+.android-list-item {
+padding: 8px;
+}
+
+.main-images {
+object-fit: cover;
+object-position: center;
+}
+
+@media screen and (max-width: 769px) {
+    .section {
+    flex-direction: column;
+}
+}
