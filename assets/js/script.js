@@ -6,7 +6,6 @@ $(document).ready(function () {
         fetch('https://api.rawg.io/api/platforms?key=5d6305c20a2d4927a017ef5ef6beab60')
             .then(response => response.json())
             .then(data => {
-                console.log(data)
                 for (let i = 0; i < data.results.length; i++) {
                     $('.dropdown-item').append('<a class="dropdown-anchor" id="' + data.results[i].id + '">' + data.results[i].name + '</a>');
                     if (data.results[i].name == 'PC') {

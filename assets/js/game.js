@@ -19,7 +19,6 @@ $(document).ready(function () {
                 $('#video-container').remove();
                 $('main').addClass('set-height')
             }
-            console.log('data', data)
             $('#game-title').text(data.name);
             $('#game-image').attr('src', data.background_image);
             $('#released').text(data.released);
