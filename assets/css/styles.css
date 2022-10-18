@@ -82,7 +82,7 @@ overflow: visible;
 
 .section {
     background-color: var(--black);
-    border-top: 2px dotted var(--white);
+    border-top: 1px dashed var(--white);
 }
 
 #search-container {
@@ -142,7 +142,7 @@ h2 {
 h2 a:hover {
     font-size: 55px;
     color: (var(--white));
-    border: 1px solid var(--white);
+    border: 1px dashed var(--white);
     padding: 2px;
     border-radius: 5px;
 }
@@ -170,7 +170,7 @@ h2 a:hover {
 
 .footer {
     background-color: var(--black);
-    border-top: 2px dotted var(--white);
+    border-top: 1px dashed var(--white);
 }
 
 strong {
