@@ -41,6 +41,29 @@ fetch('https://api.rawg.io/api/platforms?key=5d6305c20a2d4927a017ef5ef6beab60')
     })
 }
 
+function captureInput (e) {
+    localStorage.setItem('searchInput', e.target.value)
+    fetch('https://api.rawg.io/api/games' + `?search=${e.target.value}&key=5d6305c20a2d4927a017ef5ef6beab60`)
+    .then(response => response.json())
+    .then(data => {
+    console.log(data)
+    const x = data.results.map(result => result.slug)
+    console.log(x)
+    x.forEach(option => {
+        const element = "<option value=\"" + option + "\">" +option + "</option>";
+        console.log(option)
+        $('#games').append(element)
+        console.log(element)
+    });
+
+    // localStorage.setItem('autoComplete', JSON.stringify(x))
+    // $("#games").autoComplete({
+    //     source: x
+    //   });
+    }).catch(err => {console.log('error', err)})
+console.log(e)
+}
+
 
 
 function searchGame(e) {
@@ -102,6 +125,7 @@ new Splide( '.splide', {
   perPage : 3,
 }).mount()
 
+$('#game-search').on('input', captureInput);
 
 
 

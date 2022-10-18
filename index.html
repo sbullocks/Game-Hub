@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/themes/splide-default.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Project 1</title>
+    <script>
+        function userSearch() {
+        const results = localStorage.getItem('autoComplete')
+        };
+        </script>
 </head>
 
 <body>
@@ -84,7 +89,8 @@
         </div>
         <form id="form-wrapper">
             <div class="control">
-                <input id="game-search" class="input" type="text" placeholder="Search for a game:">
+                <input list="games" id="game-search" class="input" type="search" placeholder="Search for a game:">
+                <datalist id="games"> </datalist>
             </div>
             <div class="control">
                 <button class="button is-info" type="submit" id="searchBtn">
@@ -147,7 +153,6 @@
             </p>
         </div>
     </footer>
-
     <script src="https://kit.fontawesome.com/0f566aaf75.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
