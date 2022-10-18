@@ -61,12 +61,16 @@ header a:hover {
 }
 
 /* ------- MAIN ------ */
+main {
+height: 80%;
+}
+
 #main-container {
     background-color: var(--black);
     border: 2px dotted var(--white);
     flex-direction: column;
-    margin: 0;
     height: 100%;
+    margin: 0;
 }
 
 #platform-stats-container {
