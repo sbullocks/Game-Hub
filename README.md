@@ -78,7 +78,7 @@ Click [here](https://sbullocks.github.io/Game-Hub/) to access the live website.
 
 ## Contributing
 
-Our coding class, [MDN](https://developer.mozilla.org/en-US/), [W3 Schools](https://www.w3schools.com/), [RapidAPI](https://rapidapi.com/hub), [StackOverflow](https://stackoverflow.com/)..
+Our coding class, [MDN](https://developer.mozilla.org/en-US/), [W3 Schools](https://www.w3schools.com/), [RapidAPI](https://rapidapi.com/hub), [StackOverflow](https://stackoverflow.com/), [Bulma](https://bulma.io/)..
 
 ## Questions
 
