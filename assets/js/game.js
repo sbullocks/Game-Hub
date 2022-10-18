@@ -19,7 +19,6 @@ $(document).ready(function () {
                 $('#video-container').remove();
                 $('main').addClass('set-height')
             }
-            console.log('data', data)
             $('#game-title').text(data.name);
             $('#game-image').attr('src', data.background_image);
             $('#released').text(data.released);
@@ -62,7 +61,6 @@ $(document).ready(function () {
     fetch('https://amazon24.p.rapidapi.com/api/product?keyword=' + game.replace('-', ' ') + 'video game' + '&country=US&page=1', amazonOptions)
         .then(response => response.json())
         .then(data => {
-            console.log(data)
             $('#amazon-clickable').attr('href', data.docs[0].product_detail_url)
         })
         .catch(err => console.error(err));

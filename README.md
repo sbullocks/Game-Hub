@@ -2,7 +2,7 @@
 
 Project 1.
 
-* We connected 2 APIs via JavaScript to power our Game Hub application. The Game Hub allows a user to search for games by title and they will be presented with data regarding their search. User can then watch a popular video from YouTube related to that game search. User can also search by console and will be presented with the latest information regarding their search.
+* We connected 3 APIs via JavaScript to power our Game Hub application. The Game Hub allows a user to search for games by title and they will be presented with data regarding their search as well as a link to shop for similar products on Amazon. The user can then watch a popular video from YouTube related to that game search. The user can also search by console and will be presented with the latest information regarding their search.
 
 ## Table of Contents:
 

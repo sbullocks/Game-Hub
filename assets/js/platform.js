@@ -30,7 +30,6 @@ $(document).ready(function () {
 	fetch('https://youtube138.p.rapidapi.com/search/?q=' + platformName + 'gaming news' + '&hl=en&gl=US', options)
 		.then(response => response.json())
 		.then(data => {
-			console.log(data)
 			for (let i = 0; i < data.contents.length; i++) {
 				if (data.contents[i].type == 'video') {
 					let video = 'https://www.youtube.com/embed/' + data.contents[i].video.videoId;
@@ -54,7 +53,6 @@ $(document).ready(function () {
     fetch('https://amazon24.p.rapidapi.com/api/product?keyword=' + platformName.replace('-', ' ') + 'gaming system' + '&country=US&page=1', amazonOptions)
         .then(response => response.json())
         .then(data => {
-            console.log(data)
             $('#amazon-clickable').attr('href', data.docs[0].product_detail_url)
         })
         .catch(err => console.error(err));
