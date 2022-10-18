@@ -1,58 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/css/game.css">
-    <title>Project 1</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/game.css">
+  <title>Project 1</title>
 </head>
 
 <body>
-    <header class="columns is-justify-content-space-between m-0 p-1">
-        <h1><u>Game Hub </u></h1>
-        <ul class="is-flex-direction-row is-align-items-center" style="display: flex";>
-            <li class="mr-5"><a href="index.html">Home</a></li>
-            <li class="mr-5"><a href="index.html#pc-section">PC</a></li>
-            <li class="mr-5"><a href="index.html#playstation-section">PlayStation 5</a></li>
-            <li class="mr-5"><a href="index.html#xbox-section">XBOX One</a></li>
-            <li class="mr-5"><a href="index.html#iphone-section">IOS</a></li>
-            <li class="mr-5"><a href="index.html#android-section">Android</a></li>
-        </ul>
 
-    </header>
-    <main>
-      <div id="main-container" class="columns is-justify-content-center">
-        <div id="game-image-container" class="column is-half">
-          <div id="image-wrapper">
+  <!----------- HEADER ---------->
+
+  <header class="columns is-justify-content-space-between m-0 p-1">
+    <h1 id="project-title-header"><u>Game Hub </u></h1>
+    <ul id="top-nav-list" class="is-flex-direction-row is-align-items-center" style="display: flex; flex-wrap: wrap">
+      <li class="mr-5"><a class="nav-links" href="index.html">Home</a></li>
+      <li class="mr-5"><a class="nav-links" href="index.html#pc-section">PC</a></li>
+      <li class="mr-5"><a class="nav-links" href="index.html#playstation-section">PlayStation 5</a></li>
+      <li class="mr-5"><a class="nav-links" href="index.html#xbox-section">XBOX One</a></li>
+      <li class="mr-5"><a class="nav-links" href="index.html#iphone-section">IOS</a></li>
+      <li class="mr-5"><a class="nav-links" href="index.html#android-section">Android</a></li>
+    </ul>
+  </header>
+
+  <!----------- MAIN ---------->
+
+  <main>
+    <div id="main-container" class="columns is-justify-content-center">
+      <div id="game-image-container" class="column is-half">
+        <div id="image-wrapper">
           <img id="game-image">
         </div>
-        </div>
-        <div id="game-stats-container" class="column is-half">
-            <h4 id="game-title"></h4>
-            <span id="released-span">Date Released: <span id="released"></span></span>
-            <p id="description"></p>
-            <h3>Platforms:</h3><ul id="platforms"></ul>
-        </div>
       </div>
-        <div id="video-container" class="video-container section is-medium">
-        </div>
-      </main>
+      <div id="game-stats-container" class="column is-half">
+        <h4 id="game-title"></h4>
+        <span id="released-span">Date Released: <span id="released"></span></span>
+        <p id="description"></p>
+        <h3>Platforms:</h3>
+        <ul id="platforms"></ul>
+      </div>
+    </div>
+    <div id="video-container" class="video-container section is-small is-flex is-flex-direction-column">
+      <h3 id="trailer-text">Game Trailer</h3>
+    </div>
+  </main>
 
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                <strong>Game Hub --</strong> by Dylan, Stephen, Antoine, Jordan.
-            </p>
-        </div>
-    </footer>
+  <!----------- FOOTER ---------->
 
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Game Hub --</strong> by Dylan, Stephen, Antoine, Jordan.
+      </p>
+    </div>
+  </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="./assets/js/game.js"></script>
+<!-- --------- SCRIPTS -------- -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./assets/js/game.js"></script>
 </body>
+
 </html>

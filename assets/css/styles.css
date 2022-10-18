@@ -1,217 +1,206 @@
 :root {
---black: #0e1111;
---white: #f9f9f9;
+    --black: #0e1111;
+    --white: #f9f9f9;
 }
 
 * {
-font-family: 'Prompt', serif;
-color: var(--white);
+    font-family: 'Prompt', serif;
+    color: var(--white);
 }
+
+/* ------------ HEADER -------------- */
 
 header {
-background-color: var(--black);
+    background-color: var(--black);
 }
 
-#hero {
-background-color: var(--black);
-border-top: 2px dotted var(--white);
+h1 {
+    font-size: 44px;
 }
+
+header a:active {
+    font-size: 34px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+header a:link {
+    font-size: 34px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+header a:visited {
+    font-size: 34px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+header a:hover {
+    font-size: 34px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+header li {
+    position: relative;
+}
+
+header li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--white);
+    transform: scaleX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+header li:hover::after {
+    transform: scaleX(1);
+}
+
+/* -------------- CAROUSEL ------------------ */
+
+.splide__slide img {
+    height: 250px;
+    width: 180px;
+    box-shadow: 10px 10px 3px black;
+}
+
+.splide__track {
+overflow: visible;
+}
+
+.carousel-games:hover {
+    cursor: pointer;
+}
+
+/* --------------- MAIN --------------------*/
 
 .section {
-background-color: var(--black);
-border-top: 2px dotted var(--white);
+    background-color: var(--black);
+    border-top: 1px dashed var(--white);
 }
 
 #search-container {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #searchBtn {
-background-color: var(--black);
-border-color: var(--white);
+    background-color: var(--black);
+    border-color: var(--white);
 }
 
 #searchBtn:hover {
-background-color: var(--white);
-border-color: var(--black);
-color: var(--black)
+    background-color: var(--white);
+    border-color: var(--black);
+    color: var(--black)
 }
 
 
 #form-wrapper {
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-#pc-section {
-background-color: var(--black);
-}
-
-#playstation-section {
-background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dropdown {
-margin: 25px;
-}
-
-#xbox-section {
-background-color: var(--black);
-}
-
-#iphone-section {
-background-color: var(--black);
-}
-
-#android-section {
-background-color: var(--black);
-}
-
-h1 {
-font-size: 44px;
-}
-
-h2 {
-font-size: 34px;
-color: var(--white);
-text-decoration: none;
-font-weight: 700;
-}
-
-a {
-color: var(--white);
-}
-
-h2 a:hover {
-font-size: 55px;
-color: (var(--white));
-border: 1px solid var(--white);
-padding: 2px;
-border-radius: 5px;
-}
-
-header a:link {
-font-size: 34px;
-color: var(--white);
-text-decoration: none;
-}
-
-header a:visited {
-font-size: 34px;
-color: var(--white);
-text-decoration: none;
-}
-
-header a:hover {
-font-size: 34px;
-color: var(--white);
-text-decoration: none;
-}
-
-/*link hover effect*/
-header li {
-position: relative;
-}
-
-header li::after {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 1px;
-background: var(--white);
-transform: scaleX(0);
-transition: transform 0.6s ease-in-out;
-}
-
-header li:hover::after {
-transform: scaleX(1);
-}
-
-.click-color {
-color: var(--black)
-}
-
-.fa-solid {
-color: var(--black);
-}
-
-header a:active {
-font-size: 34px;
-color: var(--white);
-text-decoration: none;
+    margin: 25px;
 }
 
 .dropdown-anchor {
-color: var(--black);
-display: block;
-font-size: 16px;
+    color: var(--black);
+    display: block;
+    font-size: 16px;
 }
 
 .dropdown-anchor:hover {
-font-size: 28px;
-color: var(--black)
+    font-size: 28px;
+    color: var(--black)
 }
 
-img {
-height: 250px;
-border: 2px solid var(--white);
+.fa-solid {
+    color: var(--black);
 }
 
-.splide__slide img {
-height: 250px;
-width: 180px;
+a {
+    color: var(--white);
 }
 
-.carousel-games:hover {
-cursor: pointer;
+h2 {
+    font-size: 34px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
 }
 
-.footer {
-background-color: var(--black);
-border-top: 2px dotted var(--white);
+h2 a:hover {
+    font-size: 55px;
+    color: (var(--white));
+    border: 1px dashed var(--white);
+    padding: 2px;
+    border-radius: 5px;
 }
 
-.pc-list-item {
-padding: 8px;
+.click-color {
+    color: var(--black)
 }
 
-.playstation-list-item {
-padding: 8px;
-}
-
-.xbox-list-item {
-padding: 8px;
-}
-
-.ios-list-item {
-padding: 8px;
-}
-
-.android-list-item {
-padding: 8px;
+.pf-list-item {
+    padding: 8px;
 }
 
 .main-images {
-object-fit: cover;
-object-position: center;
+    height: 250px;
+    border: 2px solid var(--white);
+    object-position: center;
+    object-fit: cover;
 }
 
 .clickable-game {
-color: var(--white)
+    color: var(--white)
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    background-color: var(--black);
+    border-top: 1px dashed var(--white);
 }
 
 strong {
-color: var(--white)
+    color: var(--white)
 }
 
+/* ------------ MEDIA QUERIES ---------------- */
+
+@media screen and (max-width: 874px) {
+    .nav-links {
+        font-size: 24px !important;
+    }
+
+    #top-nav-list {
+        justify-content: space-between;
+    }
+}
 
 @media screen and (max-width: 769px) {
     .section {
-    flex-direction: column;
+        flex-direction: column;
+    }
 }
+
+@media screen and (max-width: 518px) {
+    #top-nav-list {
+        flex-direction: column !important;
+    }
+
+    #project-title-header {
+        text-align: center;
+    }
 }

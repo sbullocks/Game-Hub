@@ -13,21 +13,27 @@
     <title>Project 1</title>
 </head>
 
-<body>
-    <header class="columns is-justify-content-space-between m-0 p-1">
-        <h1><u>Game Hub </u></h1>
-        <ul class="is-flex-direction-row is-align-items-center" style="display: flex" ;>
-            <li class="mr-5"><a href="index.html">Home</a></li>
-            <li class="mr-5"><a href="index.html#pc-section">PC</a></li>
-            <li class="mr-5"><a href="index.html#playstation-section">PlayStation 5</a></li>
-            <li class="mr-5"><a href="index.html#xbox-section">XBOX One</a></li>
-            <li class="mr-5"><a href="index.html#iphone-section">IOS</a></li>
-            <li class="mr-5"><a href="index.html#android-section">Android</a></li>
-        </ul>
 
+<body>
+
+    <!----------- HEADER ---------->
+
+    <header class="columns is-justify-content-space-between m-0 p-1">
+        <h1 id="project-title-header"><u>Game Hub </u></h1>
+        <ul id="top-nav-list" class="is-flex-direction-row is-align-items-center" style="display: flex; flex-wrap: wrap">
+            <li class="mr-5"><a class="nav-links" href="index.html">Home</a></li>
+            <li class="mr-5"><a class="nav-links" href="index.html#pc-section">PC</a></li>
+            <li class="mr-5"><a class="nav-links" href="index.html#playstation-section">PlayStation 5</a></li>
+            <li class="mr-5"><a class="nav-links" href="index.html#xbox-section">XBOX One</a></li>
+            <li class="mr-5"><a class="nav-links" href="index.html#iphone-section">IOS</a></li>
+            <li class="mr-5"><a class="nav-links" href="index.html#android-section">Android</a></li>
+        </ul>
     </header>
+
+    <!----------- MAIN ---------->
+
     <main>
-        <div id="main-container" class="columns">
+        <div id="main-container" class="is-flex is-justify-content-space-evenly">
             <div id="platform-stats-container">
                 <h4 id="platform-title"></h4>
             </div>
@@ -35,13 +41,15 @@
             <div id="platform-image-container">
                 <div id="image-wrapper">
                     <img id="platform-image">
-                    <div class="video-container">
+                </div>
+                <div class="video-container">
                         <h3>Latest News: </h3>
                     </div>
-                </div>
             </div>
         </div>
     </main>
+
+    <!----------- FOOTER ---------->
 
     <footer class="footer">
         <div class="content has-text-centered">
@@ -52,8 +60,8 @@
     </footer>
 
 
+    <!----------- SCRIPTS ---------->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/platform.js"></script>
 </body>
 
