@@ -91,7 +91,7 @@ overflow: visible;
 
 #search-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -111,6 +111,25 @@ overflow: visible;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#girl-image {
+height: 15%;
+width: 15%;
+animation: fadeInRight 2s ease-in-out 0.2s;
+cursor: wait;
+}
+
+#sonic-image {
+height: 15%;
+width: 15%;
+animation: fadeInLeft 2s ease-in-out 0.2s;
+cursor: wait;
+}
+
+#girl-image:hover, #sonic-image:hover {
+animation: spin 2s linear;
+animation-iteration-count: infinite;
 }
 
 .dropdown {
@@ -214,4 +233,46 @@ strong {
     #project-title-header {
         text-align: center;
     }
+}
+
+/* --------- KEYFRAMES --------- */
+
+@keyframes fadeInRight {
+    0% {
+    transform: translateX(-200px)
+    }
+    100% {
+    transform: translateX(0)
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+    transform: translateX(200px)
+    }
+    100% {
+    transform: translateX(0)
+    }
+}
+
+@keyframes spin {
+    0% {
+    transform: rotate(40deg)
+    }
+    20% {
+    transform: rotate(110deg)
+    }
+    40% {
+    transform: rotate(180deg)
+    }
+    60% {
+    transform: rotate(240deg)
+    }
+    80% {
+    transform: rotate(300deg)
+    }
+    100% {
+    transform: rotate(360deg)
+    }
+
 }
