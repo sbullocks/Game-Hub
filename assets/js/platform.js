@@ -53,7 +53,7 @@ $(document).ready(function () {
     fetch('https://amazon24.p.rapidapi.com/api/product?keyword=' + platformName.replace('-', ' ') + 'gaming system' + '&country=US&page=1', amazonOptions)
         .then(response => response.json())
         .then(data => {
-            $('#amazon-clickable').attr('href', data.docs[0].product_detail_url)
+            $('#amazon-clickable').attr('href', data.docs[0].product_detail_url).attr('target', '_blank');
         })
         .catch(err => console.error(err));
 
