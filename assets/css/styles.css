@@ -4,7 +4,7 @@
 }
 
 * {
-    font-family: 'Prompt', serif;
+    font-family: 'ArcadeClassic', sans-serif;
     color: var(--white);
 }
 
@@ -16,6 +16,10 @@ header {
 
 h1 {
     font-size: 44px;
+}
+
+header a {
+font-family: 'ArcadeClassic', sans-serif;
 }
 
 header a:active {
@@ -130,13 +134,19 @@ overflow: visible;
 
 a {
     color: var(--white);
+    font-family: 'Noto Sans Mono', 'serif';
 }
 
 h2 {
+    font-family: 'ArcadeClassic', sans-serif;
     font-size: 34px;
     color: var(--white);
     text-decoration: none;
     font-weight: 700;
+}
+
+.platform-click {
+font-family: 'ArcadeClassic', sans-serif;
 }
 
 h2 a:hover {
@@ -145,6 +155,7 @@ h2 a:hover {
     border: 1px dashed var(--white);
     padding: 2px;
     border-radius: 5px;
+    white-space: nowrap;
 }
 
 .click-color {

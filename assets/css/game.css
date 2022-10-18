@@ -4,12 +4,20 @@
 }
 
 * {
-    font-family: 'Prompt', serif;
+    font-family: 'ArcadeClassic', sans-serif;
     color: var(--white);
 }
 
 body {
     height: 100vh;
+}
+
+p {
+font-family: 'Yuji', 'serif';
+}
+
+li {
+font-family: 'Noto Sans Mono', 'serif';
 }
 
 /* -------- HEADER --------- */
@@ -85,6 +93,10 @@ h1 {
 
 #amazon-container {
 text-align: center;
+}
+
+#amazon-title {
+font-family: 'Noto Sans Mono', sans-serif;
 }
 
 #amazon-logo {
