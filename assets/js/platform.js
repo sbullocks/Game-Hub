@@ -10,7 +10,9 @@ $(document).ready(function () {
 		.then(data => {
 			$('#platform-image').attr('src', data.image_background);
 			$('#platform-title').text(platformName);
-			$('#platform-stats-container').append('<img style="margin-left: 2%; margin-top: 1%;" height="20px" width="70px" src="./assets/images/icons/' + platform + '.png">')
+			if (platform == 4 || platform == 187 || platform == 1 || platform == 3 || platform == 21) {
+				$('#platform-stats-container').append('<img style="margin-left: 2%; margin-top: 1%;" height="20px" width="70px" src="./assets/images/icons/' + platform + '.png">')
+			}
 			$('#total-games').text(data.games_count);
 		})
 
