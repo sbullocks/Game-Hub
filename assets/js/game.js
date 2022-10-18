@@ -62,7 +62,6 @@ $(document).ready(function () {
     fetch('https://amazon24.p.rapidapi.com/api/product?keyword=' + game.replace('-', ' ') + 'video game' + '&country=US&page=1', amazonOptions)
         .then(response => response.json())
         .then(data => {
-            console.log(data)
             $('#amazon-clickable').attr('href', data.docs[0].product_detail_url)
         })
         .catch(err => console.error(err));
