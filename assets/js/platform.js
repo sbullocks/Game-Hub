@@ -11,7 +11,7 @@ $(document).ready(function () {
 			$('#platform-image').attr('src', data.image_background);
 			$('#platform-title').text(platformName);
 			if (platform == 4 || platform == 187 || platform == 1 || platform == 3 || platform == 21) {
-				$('#platform-stats-container').append('<img style="margin-left: 2%; margin-top: 1%;" height="20px" width="70px" src="./assets/images/icons/' + platform + '.png">')
+				$('#platform-stats-container').append('<img style="margin-left: 10%; margin-top: 1%;" height="20px" width="60px" src="./assets/images/icons/' + platform + '.png">')
 			}
 			$('#total-games').text(data.games_count);
 		})
@@ -40,4 +40,23 @@ $(document).ready(function () {
 			}
 		})
 		.catch(err => console.error(err));
- });
+ 
+		// ------ AMAZON FETCH -------
+
+    const amazonOptions = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'fc02a3c87bmshe9e61389afea8d6p11e23ejsn3996352c92c2',
+            'X-RapidAPI-Host': 'amazon24.p.rapidapi.com'
+        }
+    };
+
+    fetch('https://amazon24.p.rapidapi.com/api/product?keyword=' + platformName.replace('-', ' ') + 'gaming system' + '&country=US&page=1', amazonOptions)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            $('#amazon-clickable').attr('href', data.docs[0].product_detail_url)
+        })
+        .catch(err => console.error(err));
+
+});

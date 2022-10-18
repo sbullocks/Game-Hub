@@ -72,6 +72,7 @@ h1 {
 
 #game-image-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -79,6 +80,17 @@ h1 {
 #image-wrapper {
     height: 50%;
     width: 50%;
+    overflow: hidden;
+}
+
+#amazon-container {
+text-align: center;
+}
+
+#amazon-logo {
+height: 100px;
+width: 200px;
+margin-top: 2%;
 }
 
 /* ------ RIGHT GAME STATS CONTAINER -------- */

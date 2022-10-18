@@ -49,6 +49,24 @@ $(document).ready(function () {
         })
         .catch(err => console.error(err));
 
+    // ------ AMAZON FETCH -------
+
+    const amazonOptions = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'fc02a3c87bmshe9e61389afea8d6p11e23ejsn3996352c92c2',
+            'X-RapidAPI-Host': 'amazon24.p.rapidapi.com'
+        }
+    };
+
+    fetch('https://amazon24.p.rapidapi.com/api/product?keyword=' + game.replace('-', ' ') + 'video game' + '&country=US&page=1', amazonOptions)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            $('#amazon-clickable').attr('href', data.docs[0].product_detail_url)
+        })
+        .catch(err => console.error(err));
+
 
     // ------- EVENT LISTENERS -------
     $(document).on('click', '#go-back', function () {
