@@ -169,11 +169,6 @@ h2 a:link {
     text-decoration: none;
 }
 
-h2:hover {
-    transform: scale(1.5);
-    transition: transform 0.5s ease-in-out;
-}
-
 h3 {
     font-size: 32px;
 }
