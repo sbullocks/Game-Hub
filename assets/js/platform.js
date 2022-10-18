@@ -29,11 +29,13 @@ $(document).ready(function () {
 		.then(response => response.json())
 		.then(data => {
 			console.log(data)
-			let video = 'https://www.youtube.com/embed/' + data.contents[0].video.videoId;
-			if (data.contents[0].video.videoId == 'undefined') {
-			video = 'https://www.youtube.com/embed/' + data.contents[1].video.videoId;
+			for (let i = 0; i < data.contents.length; i++) {
+				if (data.contents[i].type == 'video') {
+					let video = 'https://www.youtube.com/embed/' + data.contents[i].video.videoId;
+					$('.video-container').append('<iframe class="video-frame" src="' + video + '"></iframe>')
+					return;
+				}
 			}
-			$('.video-container').append('<iframe class="video-frame" src="' + video + '"></iframe>')
 		})
 		.catch(err => console.error(err));
 
