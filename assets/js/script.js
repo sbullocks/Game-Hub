@@ -78,19 +78,32 @@ $(document).ready(function () {
         localStorage.setItem("platform", platformId);
         window.location.href = "platform.html";
     }
+    
+    function captureInput (e) {
+    localStorage.setItem('searchInput', e.target.value)
+    fetch('https://api.rawg.io/api/games' + `?search=${e.target.value}&key=5d6305c20a2d4927a017ef5ef6beab60`)
+    .then(response => response.json())
+    .then(data => {
+    console.log(data)
+    const x = data.results.map(result => result.slug)
+    console.log(x)
+    x.forEach(option => {
+        const element = "<option value=\"" + option + "\">" +option + "</option>";
+        console.log(option)
+        $('#games').append(element)
+        console.log(element)
+    });
+    }).catch(err => {console.log('error', err)})
+  console.log(e)
+  }
 
-
-
-
-
-
-
-    // ------ EVENT LISTENERS ----------
+  // ------ EVENT LISTENERS ----------
     $('#searchBtn').on('click', searchGame);
     $(document).on('click', '.dropdown-anchor', searchPlatform);
     $('.carousel-games').on('click', searchClickedGame)
     $(document).on('click', '.clickable-game', anotherSearchedClickedGame)
     $('.platform-click').click(anotherPlatformClicked);
+    $('#game-search').on('input', captureInput);
     
     // ----- SPLIDE/CAROUSEL FUNCTION --------
     new Splide('.splide', {
@@ -105,7 +118,6 @@ $(document).ready(function () {
     }).mount()
 
 
-
-    // ------- INIT FUNCTION CALL --------
+  // ------- INIT FUNCTION CALL --------
     init();
 });
