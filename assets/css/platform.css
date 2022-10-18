@@ -66,11 +66,14 @@ height: 80%;
 }
 
 #main-container {
+    display: flex;
     background-color: var(--black);
     border-top: 1px dashed var(--white);
     flex-direction: column;
     height: 100%;
     margin: 0;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #platform-stats-container {
@@ -82,6 +85,7 @@ height: 80%;
     font-size: 40px;
     font-weight: bold;
     text-decoration: underline;
+    white-space: nowrap;
 }
 
 .total-games {
@@ -93,16 +97,34 @@ height: 80%;
 #platform-image-container {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 5%;
 }
 
 #image-wrapper {
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#left-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 50%;
+}
+
+#amazon-container {
+text-align: center;
+}
+
+#amazon-logo {
+height: 100px;
+width: 200px;
+margin-top: 2%;
 }
 
 /* ---- RIGHT/VIDEO ----- */
@@ -113,6 +135,7 @@ height: 80%;
     align-items: center;
     justify-content: center;
     padding-left: 5%;
+    width: 50%;
 }
 
 .video-frame {
