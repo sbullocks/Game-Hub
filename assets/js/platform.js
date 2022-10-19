@@ -23,7 +23,7 @@ $(document).ready(function () {
 	const options = {
 		method: 'GET',
 		headers: {
-			'X-RapidAPI-Key': 'c0c3663d07msh3f3a9199795b993p11b56fjsnfed46f4daa0f',
+			'X-RapidAPI-Key': '4668dbe26bmsh6748a98435d60aep1fc66ajsnc91da4934957',
 			'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
 		}
 	};
@@ -45,7 +45,7 @@ $(document).ready(function () {
     const amazonOptions = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'fc02a3c87bmshe9e61389afea8d6p11e23ejsn3996352c92c2',
+            'X-RapidAPI-Key': '68ff5d1dcemsh158c287cee1cf83p170410jsn5a71155c310f',
             'X-RapidAPI-Host': 'amazon24.p.rapidapi.com'
         }
     };
